@@ -1,0 +1,78 @@
+﻿body
+{
+  margin:0px;  
+}
+.admin
+{
+    position:absolute;
+    top:15px;
+    right:50px;
+    color:Teal;
+   
+}
+.apoint
+{
+    position:absolute;
+    top:10px;
+    right:180px;
+    color:Teal;
+    width:300px;
+    height:35px;
+    font-size:15px;
+}
+.emerg
+{
+    position:absolute;
+    left:600px;
+    color:white;
+    font-size:15px;
+}
+.headimg
+{
+    Width:250px;
+    Height:210px;
+    color:Teal;
+    font-size:35px;
+    text-shadow:2px 1px black;
+    position:absolute;
+    top:-1px;
+    left:100px;
+}
+
+
+.menu
+{  
+     font-size:23px;
+     padding-left:500px;
+     margin-top:40px;
+     margin-bottom:40px;
+     
+}
+.menu a
+{
+     padding:0px 12px !important;
+     
+}
+.menu a:hover
+{
+    background-color:darkslategray;
+    
+}
+
+.footer
+{
+    color:white;
+    width:30%;
+    height:250px;
+    padding-left:20px;
+}
+.res
+{
+    text-align:center;
+    color:darkslategray;
+    font-size:20px;
+    font-weight:bolder;
+}
+
+
+   

@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/MasterPage.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-color:darkslategray;height:50px">
+         <asp:Button class="admin" ID="Button1" runat="server" Text="Admin" 
+            onclick="Button1_Click" />
+         <asp:Button class="apoint" ID="Button2" runat="server" 
+            Text="Book an appointment" onclick="Button2_Click" />
+            <p class="emerg">Emergency Number: +91 6372387211</p>
+       
+     </div>
+     <div style=" background-color:Lavender">
+         <asp:Image class="headimg" ID="Image1" runat="server"  
+             ImageUrl="~/Images/logo_transparent.png" />
+        <asp:Menu class="menu" ID="Menu1" runat="server" Font-Bold="False" Font-Italic="False" 
+             Orientation="Horizontal" ForeColor="Teal" ItemWrap="True">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About us.aspx" Text="About us" Value="About us">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Doctor Panel.aspx" Text="Doctor Panel" 
+                    Value="Doctor Panel">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Departments.aspx" Text="Departments" 
+                    Value="Treatment">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Login" 
+                    Value="Patient Login">
+                    <asp:MenuItem NavigateUrl="~/Doctor Login.aspx" Text="Doctor login" 
+                        Value="Doctor login"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Patient login.aspx" Text="Patient login" 
+                        Value="Patient login"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Gallery" Value="Gallery" NavigateUrl="~/Gallery.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Contact us.aspx" Text="Contact us" 
+                    Value="Contact us"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+     
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+  
+    <div style="background-color:darkslategray; display:flex; flex-wrap:wrap" >
+    <div class="footer"><h2 style="color:Teal">OPD Timing</h2>
+    <p>Monday to Friday: 9 am to 5 pm</p>
+    <p>Saturday: 9 am to 12 pm</p>
+    <p>Sunday: Closed(Emergency case only)</p>
+    </div>
+     <div class="footer"><h2 style="color:Teal">Departments</h2>
+     <p>Neurology</p>
+     <p>Cardiology</p>
+     <p>Physiotheraphy</p>
+     <p>Orthopaedic</p>
+     <p>Cosmetic Surgery</p>
+     
+     </div>
+    <div class="footer"><h2 style="color:Teal">About us</h2>
+    <p>24 Care is leading and renowned hospitals in north india,situated in Amritsar,Punjab.</p>
+    <p>Hospital provide 24 X 7 Emergency Services For Laboratory, Pharmacy, MRI, Neuro Lab, Ultrasound, Echo, Cath Lab, X-Ray.</p>
+    <p>We also provides latest health services like EECP(ECP) and AMT</p>
+    </div>
+     <div class="footer"><h2 style="color:Teal">Quick Links</h2>
+         <asp:HyperLink ID="HyperLink1" runat="server">Book Appointment</asp:HyperLink><br /><br/>
+         <asp:HyperLink ID="HyperLink2" runat="server">Home Page</asp:HyperLink><br/><br/>
+         <asp:HyperLink ID="HyperLink3" runat="server">Doctors</asp:HyperLink><br /><br/>
+         <asp:HyperLink ID="HyperLink4" runat="server">Gallery</asp:HyperLink><br /><br/>
+         <asp:HyperLink ID="HyperLink5" runat="server">Contact US</asp:HyperLink>
+         
+     </div>
+
+    <div class="footer"><h2 style="color:Teal">Addess</h2>
+    <p>A-block,opp.:Sbi bank, Ranjit avenue, Amritsar,Punjab 143401, India</p>
+    <p>Contact us: +91 9834561000, +91 9834572000</p>
+    <p>Email: 24care@hospital.com</p>
+    </div>
+    
+    </div>
+    <p class="res">All rights reserved @24 Care Hospital management</p>
+   
+    </form>
+</body>
+</html>

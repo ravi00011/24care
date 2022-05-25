@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Doctor.master.cs" Inherits="Module_Doctor_login_Doctor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-color:saddlebrown">
+   
+        <asp:Menu class="menu" ID="Menu1" runat="server" Orientation="Horizontal" 
+            ForeColor="White">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" 
+                    NavigateUrl="~/Module Doctor login/homee.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="View Appointment" Value="View Appointment" 
+                    NavigateUrl="~/Module Doctor login/View Appointment.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="View Salary" Value="View Salary" 
+                    NavigateUrl="~/Module Doctor login/View salary.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Change Password" Value="Change Password" 
+                    NavigateUrl="~/Module Doctor login/Change password.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+       </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    <div style=" background-color:saddlebrown;height:50px"> 
+    </div>
+    </form>
+</body>
+</html>

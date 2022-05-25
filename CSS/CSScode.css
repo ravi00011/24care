@@ -1,0 +1,152 @@
+﻿/*--------Common code for all Pages---------*/
+body 
+{
+    margin:0px;
+    padding:0px;
+}
+h2
+{
+    color:Teal;  
+}
+
+h3
+{
+    color:Maroon;
+}
+.marg
+{
+    margin:0px 100px;
+   
+}
+.cent
+{
+    text-align:center;
+}
+.bkcolor
+{
+    height:80px;
+    text-align:center;
+    background-color:cadetblue;
+    padding-top:40px;
+}
+
+
+/*--------About us Page---------*/
+.abtout
+{
+    display:flex; 
+}
+.abtin
+{
+    width:30%;
+    height:200px;
+    margin:15px 25px;  
+}
+
+
+/*--------Home Page---------*/
+.homeout
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center; 
+}
+.homein
+{
+    width:30%;
+    height:200px;
+}
+
+
+
+/*--------Department Page---------*/
+
+.departout
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center; 
+}
+.departin
+{
+    width:27%;
+    height:250px;
+    margin:20px 15px;
+    border:1px solid azure;
+    border-radius:25px; 
+    background-color:azure;      
+}
+.imag
+{
+    width:330px;
+    height:170px;
+    padding-left:35px;
+    padding-top:15px;
+   
+}
+
+
+/*--------Doctor Panel Page---------*/
+.doctorout
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+.doctorin
+{
+    width:30%;
+    height:300px;
+    border:2px solid maroon;
+    border-radius:15px;  
+    margin:10px;
+    padding:10px;
+    text-align:center;
+}
+.doctorimag
+{
+    width:300px;
+    height:170px;  
+    
+}
+
+
+/*--------Gallery Page---------*/
+.galleryout
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    
+}
+.galleryin
+{
+    width:30%;
+    height:300px;
+    padding:13px;   
+}
+.galleryimg
+{
+    width:500px;
+    height:300px;
+    border:2px solid maroon; 
+} 
+
+
+/*--------Contact Us Page---------*/
+.contactout
+{
+    display:flex;
+    flex-wrap:wrap;
+    
+    
+}
+.contactin
+{
+    width:40%;
+    height:600px;
+    padding-left:150px;
+    padding-top:50px;
+}
+

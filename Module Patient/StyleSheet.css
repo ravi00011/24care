@@ -1,0 +1,30 @@
+﻿body 
+{
+    margin:0px;
+    padding:0px;      
+}
+h2
+{
+    color:maroon;
+    text-align:center;
+}
+.menu
+{
+    font-size:23px;
+    margin-left:200px;
+    padding:50px;     
+}
+.menu a
+{
+    padding:0px 12px !important;
+}
+.margin
+{
+    margin-left:100px;
+    margin-top:30px;
+}
+.minheight
+{
+    height:700px;
+}
+
